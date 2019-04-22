@@ -1,0 +1,41 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "baseUrl": "src",
+		"paths": {
+			"@lib/*": ["app/@lib/*"],
+			"@app/*": ["app/*"],
+			"@theme/*": ["app/@theme/*"],
+			"@core/*": ["app/@core/*"],
+			"@env/*": ["environments/*"],
+			"@service/*": ["app/service/*"],
+			"@module/*": ["app/module/*"],
+			"@shared/*": ["app/module/shared/*"],
+			"@class/*": ["app/vudu/class/*"],
+			"@interceptor/*": ["app/@theme/interceptors/*"],
+			"@assets/*": ["assets/*"],
+			"@angular/*": [
+				"../node_modules/@angular/*"
+			],
+			"@nebular/*": [
+				"../node_modules/@nebular/*"
+			]
+    }
+  }
+}
